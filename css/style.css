@@ -117,7 +117,6 @@ header {
 }
 
 .social a {
-	border-radius: 50%;
 	width: 47px;
 	height: 47px;
 	background: url(../images/social.png) no-repeat;
@@ -129,8 +128,8 @@ header {
 
 }
 
-.social li:hover {
-	padding-top: 3px;
+.social li:hover a {
+	margin-top: 3px;
 }
 
 .vk a {
@@ -275,6 +274,10 @@ aside a:hover {
 	font-size: 16px;
 }
 
+.contacts .mail a:hover {
+	color: #fff;
+}
+
 .mail i {
 	background: url(../images/contacts_sprite.png) no-repeat;
 	display: block;
@@ -290,6 +293,20 @@ aside a:hover {
 	height: 39px;
 	line-height: 39px;
 	background-color: #48CBE8;
+}
+
+.contacts .number a {
+	text-decoration: none;
+	display: block;
+	height: 39px;
+	line-height: 39px;
+	color: #EDEDED;
+	font-family: FiraSans_Book;
+	font-size: 16px;
+}
+
+.contacts .number a:hover {
+	color: #fff;
 }
 
 .number i {
@@ -308,6 +325,20 @@ aside a:hover {
 	height: 38px;
 	line-height: 38px;
 	background-color: #51DAF8;
+}
+
+.contacts .skype a {
+	text-decoration: none;
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	color: #EDEDED;
+	font-family: FiraSans_Book;
+	font-size: 16px;
+}
+
+.contacts .skype a:hover {
+	color: #fff;
 }
 
 .skype i {
