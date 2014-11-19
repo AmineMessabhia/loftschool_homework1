@@ -86,21 +86,22 @@
 					<h3 class="popup_h3">Добавление проекта</h3>
 					<a href="#" class="popup_close"></a>
 				</div>
-				<form action="">
+				<form class="popup_form" action="">
 					<p class="popup-element">Название проекта<br>
-						<input placeholder="Введите название" onfocus="placeholder='';" onblur="placeholder='Введите название';" type="text">
+						<input class="popup_inputtext" placeholder="Введите название" onfocus="placeholder='';" onblur="placeholder='Введите название';" type="text">
 					</p>
-					<p class="popup-element">Картинка проекта<br>
-						<input placeholder="Картинка проекта" onfocus="placeholder='';" onblur="placeholder='Картинка проекта';" type="file">
-
+					<p class="popup-element add_img">Картинка проекта<br>
+						<input class="popup_inputtext" placeholder="Загрузите изображение" onfocus="placeholder='';" onblur="placeholder='Загрузите изображение';" type="file">
 					</p>
 					<p class="popup-element">URL проекта<br>
-						<input placeholder="Добавить ссылку" onfocus="placeholder='';" onblur="placeholder='Добавить ссылку';" type="text">
+						<input class="popup_inputtext" placeholder="Добавьте ссылку" onfocus="placeholder='';" onblur="placeholder='Добавьте ссылку';" type="text">
 					</p>
 					<p class="popup-element">Описание<br>
 						<textarea placeholder="Пара слов о Вашем проекте" onfocus="placeholder='';" onblur="placeholder='Пара слов о Вашем проекте';"  name="comment"></textarea>
 					</p>
-					<input type="submit" class="button" value="Добавить">
+					<p class="popup_button">
+						<input type="submit" class="popup_addbutton" value="Добавить">
+					</p>
 				</form>
 			</div>			
 		</div>

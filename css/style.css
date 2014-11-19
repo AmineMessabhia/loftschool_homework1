@@ -53,6 +53,16 @@
 	src: url(../fonts/fira/firasans-lightitalic.ttf);
 }
 
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('../fonts/fira/firasans-regular.eot');
+    src: url('../fonts/fira/firasans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fira/firasans-regular.woff') format('woff'),
+         url('../fonts/fira/firasans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*HEADER*/
 
@@ -709,7 +719,7 @@ aside a:hover {
 	line-height: 138px;
 	text-align: center;
 }
-form {
+.contact_form {
 	color: #58697A;
 	font-family: FiraSans_Light;
 	font-size: 20px;
@@ -718,8 +728,6 @@ form {
 }
 
 form input {
-	width: 174px;
-	height: 28px;
 	background-color: #FBFCFD;
 	border: 1px solid #3BA8C0;
 	border-radius: 4px;
@@ -727,15 +735,23 @@ form input {
 	font-size: 14px;
 }
 
+form .contact_input {	
+	width: 174px;
+	height: 28px;
+}
+
 form textarea {
-	width: 377px;
-	height: 172px;
 	background-color: #FBFCFD;
-	border: 1px solid #3BA8C0;
 	border-radius: 4px;
 	resize: none;
 	padding: 4px;
 	font-size: 14px;
+}
+
+form .comments {
+	border: 1px solid #3BA8C0;	
+	width: 377px;
+	height: 172px;
 }
 
 input::-webkit-input-placeholder {
@@ -818,9 +834,76 @@ form .button .reset {
 	border-radius: 5px;
 }
 
-form .button .submit:hover, form .button .reset:hover {
+form .button .submit:hover, form .button .reset:hover, .popup_addbutton:hover {
 	box-shadow: none;
 	margin-top: 2px;
+}
+
+/*POPUP*/
+
+.popup_content {
+	width: 364px;
+	height: 483px;
+	margin: 0 auto;
+	background-color: #EFF3F7;
+	border-radius: 4px;
+	box-shadow: 0 6px 12.5px 0.5px rgba(13, 16, 7, 0.35);
+}
+
+.popup_header {
+	width: 364px;
+	height: 53px;
+	background-color: #48CBE8;
+	border-radius: 4px 4px 0 0;
+	border-bottom: 9px #67DFFA solid;
+	margin-bottom: 12px;
+}
+
+.popup_h3 {
+	color: #FBFCFD;
+	font-family: 'fira_sansregular';
+	font-size: 24px;
+	padding: 6px 12px;
+}
+
+.popup_form {
+	font-family: FiraSans_Book;
+	font-size: 18px;
+	color: #58697A;
+	width: 317px;
+	margin: 0 auto;
+}
+
+.popup_inputtext {	
+	width: 100%;
+	height: 41px;
+	background-color: #FBFCFD;
+	border: 1px solid #48CBE8;
+	border-radius: 4px;
+}
+
+.popup_form textarea {
+	width: 100%;
+	height: 111px;
+	background-color: #FBFCFD;
+	border: 1px solid #48CBE8;
+	border-radius: 4px;
+}
+
+.popup_addbutton {
+	width: 139px;
+	height: 31px;
+	background-color: #48CBE8;
+	border-radius: 5px;
+	box-shadow: 0 2px #3BA8C0;
+	border: 0;
+	color: #F6F6F6;
+	font-family: "FiraSans_Book";
+	font-size: 20px;
+}
+
+.popup_button {
+	text-align: center;
 }
 
 
