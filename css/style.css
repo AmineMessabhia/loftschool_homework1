@@ -654,6 +654,10 @@ aside a:hover {
 	text-decoration: none;
 }
 
+.works_view p a:hover {
+	text-decoration: underline;
+}
+
 .works_view p {
 	color: #4A545D;
 	font-family: FiraSans_Light;
@@ -668,23 +672,17 @@ aside a:hover {
 	border: 1px dashed #3BA8C0;
 	border-radius: 4px;
 	text-align: center;
-	width: 181px;
-	height: 127px;
+	width: 187px;
+	height: 133px;
 	display: block;
 	float: left;
 	margin-right: 27px;
 	margin-bottom: 44px;
-	-webkit-transition-property: width, height;
-	-o-transition-property: width, height;
-	transition-property: width, height;
-	-webkit-transition-duration: .2s;
-	-o-transition-duration: .2s;
-	transition-duration: .2s;
+	transition: box-shadow .2s;
 }
 
 .works_view .add_new_project:hover {
-	width: 183px;
-	height: 129px;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
 }
 
@@ -848,7 +846,7 @@ form .button .submit:hover, form .button .reset:hover, .popup_addbutton:hover {
 /*POPUP*/
 
 .popup_conteiner {
-	/*display: none;*/
+	display: none;
 	width: 100%;
 	height: 100%;
 	background: rgba(124, 138, 152, .75);
@@ -861,6 +859,7 @@ form .button .submit:hover, form .button .reset:hover, .popup_addbutton:hover {
 
 .popup_content {
 	width: 364px;
+	height: 483px;
 	text-align: left;
 	display: inline-block;
 	position: absolute;
@@ -896,6 +895,19 @@ form .button .submit:hover, form .button .reset:hover, .popup_addbutton:hover {
 	background: url(../images/close_button.png) no-repeat;
 	float: right;
 	margin: 11px;
+	transition: transform .2s;
+	-webkit-transition: transform .2s;
+	-moz-transition: transform .2s;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+}
+
+.popup_header .popup_close:hover {
+	cursor: pointer;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
 }
 
 .popup_form {
@@ -942,6 +954,11 @@ form .button .submit:hover, form .button .reset:hover, .popup_addbutton:hover {
 	text-align: center;
 }
 
+.inputfile_wrap .input_add {
+	width: 269px;
+	border-radius: 4px 0 0 4px;
+}
+
 .add_img-fake {
 	width: 52px;
 	height: 41px;
@@ -952,7 +969,8 @@ form .button .submit:hover, form .button .reset:hover, .popup_addbutton:hover {
 	border: 0;
 	float: right;
 	position: absolute;
-	margin-left: -52px;
+	cursor: pointer;
+	/*margin-left: -52px;*/
 }
 
 .inputfile_wrap {
@@ -962,9 +980,9 @@ form .button .submit:hover, form .button .reset:hover, .popup_addbutton:hover {
 .inputfile_wrap .add_img {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	right: 0;
+	width: 52px;
+	height: 41px;
 	opacity: 0;
 	cursor: pointer;
 }

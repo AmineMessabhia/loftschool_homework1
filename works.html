@@ -67,7 +67,7 @@
 							<p><a href="#">www.site.ru</a></p>
 							<p>Информация о проекте<br>4 превью 2 строки....</p>
 						</div>
-						<div class="add_new_project" class="works">
+						<div id="openPopup" class="add_new_project" class="works">
 							<img src="images/add_new_project.png" alt=""><br><p>Добавить проект</p>
 						</div>
 					</div>
@@ -75,17 +75,13 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-		&copy; 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его
-	</footer>
-	
 	<!-- POPUP -->
 
-	<div class="popup_conteiner">
+	<div id="popup" class="popup_conteiner">
 		<div class="popup_content">
 			<div class="popup_header">
 				<h3 class="popup_h3">Добавление проекта</h3>
-				<a href="#" class="popup_close"></a>
+				<div id="closePopup" class="popup_close"></div>
 			</div>
 			<form class="popup_form" action="">
 				<p class="popup-element">Название проекта<br>
@@ -93,7 +89,7 @@
 				</p>
 				<p class="popup_element">Картинка проекта<br>
 					<div class="inputfile_wrap">
-						<input class="popup_inputtext" placeholder="Загрузите изображение" onfocus="placeholder='';" onblur="placeholder='Загрузите изображение';" type="text">
+						<input class="popup_inputtext input_add" placeholder="Загрузите изображение" onfocus="placeholder='';" onblur="placeholder='Загрузите изображение';" type="text">
 						<i class="add_img-fake"></i>
 						<input class="add_img" type="file">
 					</div>
@@ -110,5 +106,10 @@
 			</form>
 		</div>			
 	</div>	
+	<footer>
+		&copy; 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его
+	</footer>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
